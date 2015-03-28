@@ -1,9 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Junwei Peng Blog</title>
-</head>
-<body>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
 
-</body>
-</html>>
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>SICP 1.21 寻找素数因子 by pxjw</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/pxjw">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>SICP 1.21 寻找素数因子</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <div id="no-downloads">
+        <span class="inner">
+        </span>
+      </div>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a id="计算机程序的构造和解释-121-寻找素数因子" class="anchor" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E8%A7%A3%E9%87%8A-121-%E5%AF%BB%E6%89%BE%E7%B4%A0%E6%95%B0%E5%9B%A0%E5%AD%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>计算机程序的构造和解释 1.21 寻找素数因子</h2>
+
+<ul>
+<li>寻找素数因子</li>
+<li>要求用书中的smallest-divisor过程找出199, 1999, 19999的最小因子。</li>
+<li>Scheme Code：</li>
+</ul>
+
+<p><strong>主要流程：</strong>
+    定义寻找素数的过程
+    如果2的平方即4，大于测试值，那么它肯定是素数
+    如果n能和2整除，那么不是素数，最小因子是2
+    如果不是，回到过程find-div，再试试能不能与2+1整除，循环</p>
+
+<pre><code>#lang racket
+(define (square x)
+  (* x x))
+;定义筛选
+(define (smallest-div n)
+  (find-div n 2))
+
+(define (find-div n td)
+  (cond ((&gt; (square td) n) n)
+        ((divd? td n) td)
+        (else (find-div n (+ td 1)))))
+
+(define (divd? a b)
+  (= (remainder b a) 0))
+;primer过程，如果满足条件那么等于true,否则false，用#t和#f表示，类似bool
+(define (primer? n)
+  (= n (smallest-div n)))
+</code></pre>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>Projects by <a href="https://github.com/pxjw">pxjw</a> can be found on <a href="https://github.com/pxjw">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
