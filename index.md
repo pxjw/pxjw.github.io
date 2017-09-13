@@ -1,4 +1,4 @@
-# 彭俊威   Miral
+# 彭俊威
 #### Product Manager 中国电信·翼支付
 
 #### Motto：
@@ -12,7 +12,7 @@
 * 知乎:[junwei peng](http://www.zhihu.com/people/pxjw)
 
 * LinkedIn：[Miral Peng](https://www.linkedin.com/in/junweipeng)
-##### My article：
+#### Article：
 
 * 简书:[谜洛](http://www.jianshu.com/u/95067ab0a52c)
 * 知乎专栏:[创业者的小黑板](https://zhuanlan.zhihu.com/junwei)
