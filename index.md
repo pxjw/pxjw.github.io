@@ -1,6 +1,5 @@
-#### About me：
 # 彭俊威   Miral
-## Product Manager 中国电信·翼支付
+#### Product Manager 中国电信·翼支付
 
 #### Motto：
 * 应似飞鸿踏雪泥
