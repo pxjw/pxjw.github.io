@@ -1,8 +1,9 @@
 # 彭俊威
-
 ### Product Manager/Tech
-* 中国平安-壹钱包 2018-now
-* 中国电信·翼支付 2016-2018
+
+#### Work for：
+* 平安.壹钱包
+* 电信.翼支付 2016-2018
 #### Contact：
 * Email:pxjw@outlook.com
 
