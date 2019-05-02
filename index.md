@@ -1,8 +1,7 @@
 # 彭俊威
-#### Product Manager 中国电信·翼支付
-
-#### Motto：
-* 应似飞鸿踏雪泥
+#### Job
+中国平安-壹钱包 2018-
+中国电信·翼支付 2016-2018
 
 #### Contact：
 * Email:pxjw@outlook.com
